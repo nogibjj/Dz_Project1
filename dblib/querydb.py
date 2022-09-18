@@ -1,5 +1,6 @@
 from databricks import sql
 import os
+import pandas as pd
 
 
 def querydb(query="SELECT * FROM default.us_counties_csv LIMIT 2"):
@@ -14,6 +15,7 @@ def querydb(query="SELECT * FROM default.us_counties_csv LIMIT 2"):
             result = cursor.fetchall()
 
         for row in result:
-            print(row)
+            df = pd.DataFrame(row)
+            print(df)
 
     return result
