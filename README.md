@@ -3,12 +3,11 @@
 [![Python application test with Github Actions](https://github.com/nogibjj/ids-706-project-1-chang/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/Dz_Project1/actions/workflows/main.yml)
 
 ## Overview
-This project is a big data script that uses Spark to query a database. For the Spark part, this project uses Databricks. Databricks clusters are run on Microsoft Azure. To communicate with the database on Databricks, this project uses the Python Databricks library. For users to run the query, there are two options: CLI and FastAPI.
-
-<img width="530" alt="image" src="https://user-images.githubusercontent.com/31728012/190923039-4a7a0fae-3833-43f1-8d2a-a57a49ff25c0.png">
+This project build a microservice, command-line tool that talks to a big data system. We us Azure Databricks to operate datas. And implement get and get query method for users. To communicate with the database on Databricks, this project uses the Python Databricks library. The users can use CLI or FastAPI to query the DataBase.
 
 ## Scaffold
 This project uses .devcontainer to set up a container. requirements.txt indicates which dependencies to use. Makefile indicates how to test and lint. It also installs the required dependencies. Just use ```make``` to install.
+<img width="530" alt="image" src="https://user-images.githubusercontent.com/31728012/190923039-4a7a0fae-3833-43f1-8d2a-a57a49ff25c0.png">
 
 ## Databricks and Microsoft Azure
 The database of this project is kept on Databricks and Databricks is run on Microsoft Azure. Databricks is based on Apache Spark, so we can leverage its parallel nature when doing queries.
